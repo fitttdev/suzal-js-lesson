@@ -9,15 +9,22 @@
 
   <button id="myButton">Click me</button>
 
+  <button id="name">Click Name</button>
+
   <script>
     const myObject = {
       name: 'Nima',
       handleClick: function (event) {
+        console.log("BTN THIS", this)
         console.log(`Hello, ${this.name}!`);
-      }
+      },
+      clickName: function (event) {
+        console.log("NAME THIS", this)
+        console.log(`Hello, ${this.name}!`);
+      },
     };
-
     document.getElementById('myButton').addEventListener('click', myObject.handleClick);
+    document.getElementById('name').addEventListener('click', myObject.clickName);
   </script>
 </body>
 

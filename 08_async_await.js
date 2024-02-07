@@ -24,5 +24,4 @@ async function fetchData() {
 }
 
 fetchData();
-
 console.log("Execution Continues")

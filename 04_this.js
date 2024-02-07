@@ -34,3 +34,13 @@ class ThisClass {
     console.log(`Hello, ${this.name}!`);
   }
 }
+
+
+class Lesson {
+  constructor() { }
+  greet() {
+
+  }
+}
+
+const l = new Lesson()

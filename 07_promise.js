@@ -2,7 +2,10 @@
 // or failure of an asynchronous operation. It provides a cleaner
 // alternative to callback functions for handling asynchronous tasks.
 
-const myPromise = new Promise((resolve, reject) => {
+// Synchronous operation =  real time
+// Asynchronous(BG) operation = not real time(can be deferred)
+
+const myPromise = new Promise((resolve) => {
   // Asynchronous operation
   setTimeout(() => {
     const data = 'Some data';

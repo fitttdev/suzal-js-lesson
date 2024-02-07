@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Event Handler Example</title>
+</head>
+
+<body>
+
+  <button id="myButton">Click me</button>
+
+  <script>
+    const myObject = {
+      name: 'Nima',
+      handleClick: function (event) {
+        console.log(`Hello, ${this.name}!`);
+      }
+    };
+
+    document.getElementById('myButton').addEventListener('click', myObject.handleClick);
+  </script>
+</body>
+
+</html>
